@@ -1,4 +1,4 @@
-## Next JS Fundamental!
+# Next JS Fundamental!
 
 ### Pages ?
 
@@ -30,3 +30,32 @@
             - can import global css on _app.js file !!
                 - import ".././etc...
             - aweeeeeeeeesooooommmmmee !!
+
+### Tiny Project
+
+    - 1. Make styles and set a header
+        - Layout desgin is used to design next js comfortable like react
+        - next/head component servered by NextJs lol cooooool
+
+    - 2. Hide API Key
+        - can figure on next.config.js with rewrites()
+
+    - 3. Redirects is awesome !!!
+        - can figure on next.config.js
+        ```
+        async rewrites() {
+        const API_KEY = "hoithoit";
+        return [{
+            source: "/api/movies",
+            destination: `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=1`,
+        },];
+        },
+        ```
+        async redirects() {
+            return [{
+                source: "/old-blog/:path*",
+                destination: "/new-sexy/:path*",
+                permanent: false,
+            }];
+        },
+        ```
