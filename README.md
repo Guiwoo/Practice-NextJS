@@ -8,7 +8,11 @@
 ### Styling NextJs ?
 
     - make same name with css module
-    - there's no class name callision
+    - there's no class name Collision
         -  NavBar.module.css like this
         -  className={styles.nav} just put on the tag
     - multiple css ? need to add string literal or make array and use join methods (" ")
+
+    - Jsx way awesome way clear to know styles
+        - Scope only one file, awesome
+        - <style jsx>{`string literal write css whatever i want`}</style> end tag

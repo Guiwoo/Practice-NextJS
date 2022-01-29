@@ -1,5 +1,4 @@
 import Link from "next/link";
-import styles from "./NavBar.module.css";
 import { useRouter } from "next/router";
 
 const NavBar = () => {
@@ -9,28 +8,23 @@ const NavBar = () => {
       <ul>
         <li>
           <Link href="/">
-            <a
-              className={`${styles.link} ${
-                rotuer.pathname === "/" ? styles.active : ""
-              }`}
-            >
-              Home
-            </a>
+            <a>Home</a>
           </Link>
         </li>
         <li>
           <Link href="/about">
-            <a
-              className={[
-                styles.link,
-                rotuer.pathname !== "/" ? styles.active : "",
-              ].join(" ")}
-            >
-              About
-            </a>
+            <a>About</a>
           </Link>
         </li>
       </ul>
+      <style jsx>{`
+        nav {
+          background-color: tomato;
+        }
+        a {
+          text-decoration: none;
+        }
+      `}</style>
     </nav>
   );
 };
