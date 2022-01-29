@@ -59,3 +59,11 @@
             }];
         },
         ```
+    - 4. getServerSideProps Have to be this name
+        - wowowowowowo export getServerSideProps() ? function ? will running on _app.js the prop sides
+
+    - ! Have to choose wait for getting data api ? or just show loading page ?
+
+    - 5. Dynamic Url
+        - wanna join /movies/all ?
+            - need to make a folder
