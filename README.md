@@ -67,3 +67,7 @@
     - 5. Dynamic Url
         - wanna join /movies/all ?
             - need to make a folder
+        - [query~~].js means dynamic url awesome
+
+    - 6. CatchAllUrls
+        - [...variable].js
