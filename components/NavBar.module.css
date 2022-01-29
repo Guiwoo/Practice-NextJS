@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: teal;
+}
+
+.active {
+  background-color: antiquewhite;
+}
+
+.link {
+  text-decoration: none;
+}
